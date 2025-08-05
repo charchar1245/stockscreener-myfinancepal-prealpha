@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MyFinancePal Pre-Alpha</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/body.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/side-buttons.css">
+    <link rel="stylesheet" href="styles/grid.css">
+
+    <script type="module" src="scripts/prealpha.js"></script>
+</head>
+
+<body>
+    <div class="sections">
+        <header>
+            <p class="title">MyFinancePal: Pre-Alpha</p>
+            <div class="intro-text">Welcome to MyFinancePal: Pre-Alpha! <br>
+                <p>
+                    Welcome to MyFinancePal: Pre-Alpha! This is a personal project designed to visualize stock metrics interactively.
+                </p>
+                <p>
+                    Use the sector and industry filters to generate custom stock screeners and analyze key performance indicators.
+                </p>
+                <p>
+                    The interface allows you to tailor the graph columns to your liking, making it a flexible tool for financial data enthusiasts.
+                </p>
+                <p style="font-weight: bold; font-size: 15px">
+                    Created by Charles Gottschalk
+                </p>
+            </div>
+        </header>
+        <main class="main-section">
+            <div> <!--Sector and Industry buttons-->
+                <div class="side-buttons">
+                    <div class="input">
+                        <select id="sectors">
+                            <option value="sector-placeholder">Select Sector</option>
+                            <option value="BMAT">Basic Materials</option>
+                            <option value="CCL">Consumer Cyclical</option>
+                            <option value="FSERV">Financial Services</option>
+                            <option value="REIT">Real Estate</option>
+                            <option value="CDEF">Consumer Defensive</option>
+                            <option value="HCR">Healthcare</option>
+                            <option value="UTIL">Utilities</option>
+                            <option value="COMM">Communication Services</option>
+                            <option value="ENGY">Energy</option>
+                            <option value="IND">Industrials</option>
+                            <option value="TECH">Technology</option>
+                        </select>
+                        <select id="industries">
+                            <option value="opt1">Need Sector</option>
+                        </select>
+
+                        <div class="region-select">
+                            <select class="regions-button" id="regions">
+                                <option value="region-placeholder">Select Region</option>
+                            </select>
+                            <p class="footnote">(US by default)</p>
+                        </div>
+
+                        <div class="rankedby-select">
+                            <p class="headnote">ranked by </p>
+                            <select class="rankedby-button" id="rankedby">
+                                <option value="default"></option>
+                                <option value="intradayprice">Price (Intraday)</option>
+                                <option value="percentchange">Percent Change in Price (Intraday)</option>
+                                <option value="forward_dividend_per_share">Dividends per Share</option>
+                                <option value="intradaymarketcap">Market Cap (Intraday)</option>
+                            </select>
+                            <p class="footnote">(intradaymarketcap by default)</p>
+                        </div>
+
+                        <button class="generate-button" id="myButton">
+                            Generate
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container"> <!--Graph div-->
+                <p class="sector-name" id="industry-title">Select Sector & Industry</p>
+                <div class="grid-stats">
+                    <div class="row" id="top-row">
+                        <div class="cell">
+                            <p>Symbol</p>
+                        </div>
+                        <div class="cell">
+                            <p>Price</p>
+                        </div>
+                        <div class="cell">
+                            <p>Sales Growth: 1 Yr</p>
+                        </div>
+                        <div class="cell">
+                            <p>Sales Growth: 3 Yr</p>
+                        </div>
+                        <div class="cell">
+                            <p>OM</p>
+                        </div>
+                        <div class="cell">
+                            <p>Price-to-Sales</p>
+                        </div>
+                    </div>
+                    <div class="row" id="row1">
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="row" id="row2">
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="row" id="row3">
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="row" id="row4">
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="row" id="row5">
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                        <div class="cell">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="edit-menu">
+            <button class="edit-menu-button" id="menu-button">Edit graph</button>
+            <div class="customize-graph-menu" id="menu">
+                <div class="row" id="graphItems">
+                    <div class="cell">
+                        <select>
+                            <option value="symbol">Symbol</option>
+                            <option value="name">Name</option>
+                        </select>
+                    </div>
+                    <div class="cell">
+                        <select>
+                            <option value="price">Price</option>
+                            <option value="beps">Basic EPS</option>
+                            <option value="deps">Diluted EPS</option>
+                            <option value="percentchange">Percent Change (Intraday)</option>
+                        </select>
+                    </div>
+                    <div class="cell">
+                        <select>
+                            <option value="sgrow1">Sales Growth: 1 Yr</option>
+                        </select>
+                    </div>
+                    <div class="cell">
+                        <select>
+                            <option value="sgrow3">Sales Growth: 3 Yr</option>
+                        </select>
+                    </div>
+                    <div class="cell">
+                        <select>
+                            <option value="om">OM</option>
+                            <option value="marketcap">Market Cap</option>
+                            <option value="percentchange">Percent Change (Intraday)</option>
+                            <option value="beps">Basic EPS</option>
+                            <option value="deps">Diluted EPS</option>
+                        </select>
+                    </div>
+                    <div class="cell">
+                        <select>
+                            <option value="P/S">Price-to-Sales</option>
+                            <option value="P/E">Price-to-Earnings</option>
+                            <option value="beps">Basic EPS</option>
+                            <option value="deps">Diluted EPS</option>
+                            <option value="percentchange">Percent Change (Intraday)</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="apply-changes-button" id="apply-changes-button">
+                    Apply Changes
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

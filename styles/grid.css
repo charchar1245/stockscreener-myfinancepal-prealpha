@@ -1,0 +1,55 @@
+.grid-container {
+    flex: 1;
+    min-width: 600px;
+    overflow-x: auto;
+}
+
+.sector-name {
+    font-size: 32px;
+    margin-top: 30px;
+}
+
+.grid-stats {
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+} 
+
+.row select {
+    flex: 1;
+    height: 30px;
+    margin: 0 10px;
+    padding: 0px;
+}
+
+.row p {
+    display: flex;
+    justify-content: center;
+    min-width: 120px;
+}
+
+
+.cell {
+    flex: 1;
+    border: 1px solid rgb(185, 185, 185);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 120px;
+}
+
+.generate-button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.na-cell {
+    color: grey;
+    opacity: 0.6;
+    font-style: italic;
+}

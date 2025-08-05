@@ -1,0 +1,41 @@
+.side-buttons {
+    width: 250px;
+    display: flex;
+    margin-top: 80px;
+}
+
+.side-buttons .input {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.generate-button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.regions-button {
+    margin-bottom: 15px;
+}
+
+.region-select {
+    position: relative;
+}
+
+.rankedby-select {
+    position: relative;
+    
+}
+
+.headnote {
+    position: absolute;
+    top: -15px;
+    font-size: 12px;
+}
+
+.footnote {
+    position: absolute;
+    top: 40px;
+    font-size: 12px;
+}

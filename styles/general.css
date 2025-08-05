@@ -1,0 +1,22 @@
+body {
+    font-family: Arial;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    height: 100%;
+    
+}
+
+header {
+    padding-bottom: 45px;
+}
+
+p {
+    margin: 0;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+}
