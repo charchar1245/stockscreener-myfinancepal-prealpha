@@ -14,12 +14,14 @@ A dynamic web application that allows users to screen and visualize top-performi
 - GitHub Pages for deployment
 
 ## Live Demo
-[View Website](https://charchar1245.github.io/stockscreener-myfinancepal-prealpha/)
+[➡️ View Website](https://charliegottschalk.github.io/stockscreener-myfinancepal-prealpha/)
 
 ## Screenshots
-![Screenshot1](link-to-screenshot)
+[View Screenshot 1](https://raw.githubusercontent.com/charliegottschalk/stockscreener-myfinancepal-prealpha/main/screenshot1.png)
+[View Screenshot 2](https://raw.githubusercontent.com/charliegottschalk/stockscreener-myfinancepal-prealpha/main/screenshot2.png)
 
 ## Future Improvements
+- Optimize API call performance.
+- Implement caching to reduce redundant fetches.
 - Add dark mode toggle.
-- Optimize API calls to reduce load times.
-- Implement caching for faster user experience.
+- Improve mobile responsiveness.
