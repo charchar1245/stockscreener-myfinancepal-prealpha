@@ -18,7 +18,6 @@ A dynamic web application that allows users to screen and visualize top-performi
 
 ## Screenshots
 [View Screenshot 1](https://github.com/charchar1245/stockscreener-myfinancepal-prealpha/blob/main/screenshot_1.png?raw=true)
-[View Screenshot 2]()
 
 ## Future Improvements
 - Optimize API call performance.
