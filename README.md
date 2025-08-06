@@ -14,7 +14,7 @@ A dynamic web application that allows users to screen and visualize top-performi
 - GitHub Pages for deployment
 
 ## Live Demo
-[➡️ View Website](https://charliegottschalk.github.io/stockscreener-myfinancepal-prealpha/)
+[➡️ View Website](https://charchar1245.github.io/stockscreener-myfinancepal-prealpha/)
 
 ## Screenshots
 [View Screenshot 1](https://raw.githubusercontent.com/charliegottschalk/stockscreener-myfinancepal-prealpha/main/screenshot1.png)
